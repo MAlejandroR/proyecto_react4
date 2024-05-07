@@ -18,7 +18,9 @@ return [
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
-    'allowed_origins' => ['http://localhost:8000', 'http://127.0.0.1:8000','*'],
+//    'allowed_origins' => ['http://localhost:8000', 'http://127.0.0.1:8000','*'],
+    'allowed_origins' => ['https://profesor.v1-22.proyectosdwa.es/',
+    'http://localhost', 'http://127.0.0.1','*'],
 
     'allowed_headers' => ['Content-Type', 'X-Requested-With'],
 

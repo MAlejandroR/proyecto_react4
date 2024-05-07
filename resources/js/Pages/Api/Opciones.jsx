@@ -2,10 +2,13 @@ import React, {useEffect, useState} from 'react';
 import Layout from "@/Layouts/Layout.jsx";
 import axios from "axios";
 import Tabla from "@/Components/Tabla.jsx";
+import {usePage} from "@inertiajs/react";
 
 
 export default function Opciones({langs = []}
 ) {
+  const baseUrl = usePage().props.baseUrl
+  console.log(baseUrl)
 
 
   //Confirmamos datos
@@ -129,7 +132,8 @@ export default function Opciones({langs = []}
   }
 
   const getFilmsServer=()=>{
-    axios.get("http://127.0.0.1:8000/films")
+    
+    axios.get(`${baseUrl}/films`)
       .then  ((response) => {
         setVisible(false)
         setFields(["title", "url"]);
