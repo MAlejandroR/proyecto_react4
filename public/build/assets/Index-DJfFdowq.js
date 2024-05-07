@@ -1,0 +1,1 @@
+import{j as n}from"./app-B9lTQqYY.js";import{T as s}from"./Tabla-DfZ8FMA5.js";import{L as t}from"./Layout-B_m-nDPD.js";import"./sweetalert2.all-C-qeOWsF.js";function p({tabla:o,campos:r,filas:e}){return console.log(`nombre de tabla ${o}`),console.log(`Campos  ${r}`),console.log(`Filas  ${e}`),n.jsx(t,{children:n.jsx(s,{campos:r,filas:e,nombre:o})})}export{p as default};
